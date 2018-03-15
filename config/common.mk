@@ -152,6 +152,10 @@ PRODUCT_BOOT_JARS += \
 # Cutout control overlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
+	
+# Fonts
+PRODUCT_PACKAGES += \
+    CustomFonts
 
 # Branding
 include vendor/cosp/config/branding.mk
