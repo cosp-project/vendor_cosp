@@ -50,10 +50,6 @@ else
     ro.device.cache_dir=/cache
 endif
 
-# Ambient Play
-PRODUCT_PACKAGES += \
-    AmbientPlayHistoryProvider
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -122,6 +118,16 @@ PRODUCT_PACKAGES += \
     mkfs.exfat \
     mkfs.ntfs \
     mount.ntfs
+	
+# COSP packages
+PRODUCT_PACKAGES += \
+    Launcher3QuickStep \
+	messaging \
+	Calendar \
+	Contacts \
+	Dialer \
+	Gallery2 \
+	Snap
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -144,16 +150,7 @@ PRODUCT_BOOT_JARS += \
 # Branding
 include vendor/aosp/config/branding.mk
 
-# OTA
-include vendor/aosp/config/ota.mk
-
-# GApps
-include vendor/gapps/config.mk
-
 # Pixel Style
 include vendor/pixelstyle/config.mk
-
-# Themes
-#include vendor/themes/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
