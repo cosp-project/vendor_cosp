@@ -122,6 +122,7 @@ PRODUCT_PACKAGES += \
 # COSP packages
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
+	Lawnchair \
 	messaging \
 	Calendar \
 	Contacts \
