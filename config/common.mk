@@ -52,41 +52,41 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosp/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
-    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/cosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/cosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/cosp/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/cosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/aosp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/aosp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/cosp/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/cosp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/cosp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
 endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/aosp/config/permissions/privapp-permissions-aosp.xml:system/etc/permissions/privapp-permissions-aosp.xml \
-    vendor/aosp/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml
+    vendor/cosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/cosp/config/permissions/privapp-permissions-cosp.xml:system/etc/permissions/privapp-permissions-cosp.xml \
+    vendor/cosp/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/cosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/cosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # Copy all custom init rc files
-$(foreach f,$(wildcard vendor/aosp/prebuilt/common/etc/init/*.rc),\
+$(foreach f,$(wildcard vendor/cosp/prebuilt/common/etc/init/*.rc),\
     $(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/cosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -137,8 +137,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cosp/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/cosp/overlay/common
 
 # Key disabler package
 PRODUCT_PACKAGES += \
@@ -148,7 +148,7 @@ PRODUCT_BOOT_JARS += \
     org.pixelexperience.keydisabler
 
 # Branding
-include vendor/aosp/config/branding.mk
+include vendor/cosp/config/branding.mk
 
 # Pixel Style
 include vendor/pixelstyle/config.mk

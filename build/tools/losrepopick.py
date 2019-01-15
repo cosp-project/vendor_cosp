@@ -363,15 +363,15 @@ if __name__ == '__main__':
         #   - check that the project path exists
         project_path = None
 
-        aosp_project_name = 'platform/' + remove_prefix(item['project'], 'android_').replace('_','/')
+        cosp_project_name = 'platform/' + remove_prefix(item['project'], 'android_').replace('_','/')
 
         if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
             project_path = project_name_to_data[item['project']][item['branch']]
         elif item['project_fallback'] in project_name_to_data and item['branch_fallback'] in project_name_to_data[item['project_fallback']]:
             project_path = project_name_to_data[item['project_fallback']][item['branch_fallback']]
-        elif aosp_project_name in project_name_to_data:
-            print('\nAOSP Project found: {0}, resolving as {1}\n'.format(item['project'], aosp_project_name))
-            project_path = remove_prefix(aosp_project_name, 'platform/')
+        elif cosp_project_name in project_name_to_data:
+            print('\nAOSP Project found: {0}, resolving as {1}\n'.format(item['project'], cosp_project_name))
+            project_path = remove_prefix(cosp_project_name, 'platform/')
         elif args.path:
             project_path = args.path
         elif args.ignore_missing:
