@@ -121,8 +121,6 @@ PRODUCT_PACKAGES += \
 	
 # COSP packages
 PRODUCT_PACKAGES += \
-    Launcher3QuickStep \
-	Lawnchair \
 	messaging \
 	Calendar \
 	Contacts \
@@ -130,6 +128,12 @@ PRODUCT_PACKAGES += \
 	Gallery2 \
 	Snap
 
+# Lawnchair
+PRODUCT_PACKAGES += Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/cosp/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/cosp/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+	
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
