@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
 	Contacts \
 	Dialer \
 	Gallery2 \
+	LatinIME \
 	Snap
 
 # Lawnchair
