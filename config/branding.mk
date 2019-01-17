@@ -17,4 +17,5 @@ CUSTOM_PROPERTIES := \
     org.cosp.version=$(CUSTOM_VERSION) \
     org.cosp.build_date=$(CUSTOM_BUILD_DATE) \
     org.cosp.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.cosp.fingerprint=$(ROM_FINGERPRINT)
+    org.cosp.fingerprint=$(ROM_FINGERPRINT) \
+    org.cosp.timestamp=$(shell date +%s)
