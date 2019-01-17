@@ -1,0 +1,31 @@
+#!/bin/bash
+# OTA
+
+DEVICE=`grep org.cosp.device $OUT/*/build.prop | cut -d'=' -f2`
+TYPE=`grep org.cosp.build_type $OUT/*/build.prop | cut -d'=' -f2`
+VERSION=`grep org.cosp.version $OUT/*/build.prop | cut -d'=' -f2`
+TIME=`grep org.cosp.timestamp $OUT/*/build.prop | cut -d'=' -f2`
+
+OTA=${OTA_TYPE,,}
+TITLE=$DEVICE\_$OTA
+
+COSP_TARGET_PACKAGE=$VERSION-$DEVICE.zip
+
+# Create OTA XML file
+if [ -f $OTA_DIR/ota_conf ] &>/dev/null; then
+
+cat >$OUT/ota_$TITLE.xml <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <$DEVICE>
+            <Filename>$VERSION</Filename>
+            <BuildTime>$TIME</BuildTime>
+            <RomUrl>https://wearetoopoorforservernow.com/$TYPE/$DEVICE/$COSP_TARGET_PACKAGE</RomUrl>
+            <MD5Url>https://wearetoopoorforservernow.com/$TYPE/$DEVICE/$COSP_TARGET_PACKAGE.md5sum</MD5Url>
+            <ChangelogUrl>https://wearetoopoorforservernow.com/$TYPE/$DEVICE/Changelog.txt</ChangelogUrl>
+        </$DEVICE>
+    </Pie>
+</Updates>
+EOF
+fi
