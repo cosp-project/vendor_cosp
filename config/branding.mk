@@ -14,7 +14,6 @@ ROM_FINGERPRINT := COSP/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUS
 endif
 
 CUSTOM_PROPERTIES := \
-    org.cosp.device=$(CUSTOM_BUILD) \
     org.cosp.version=$(CUSTOM_VERSION) \
     org.cosp.build_date=$(CUSTOM_BUILD_DATE) \
     org.cosp.build_type=$(OTA_TYPE) \
