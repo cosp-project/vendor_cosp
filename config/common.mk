@@ -130,7 +130,8 @@ PRODUCT_PACKAGES += \
 	Dialer \
 	Gallery2 \
 	LatinIME \
-	Snap
+	Snap \
+	Chromium
 
 # Lawnchair
 PRODUCT_PACKAGES += Lawnchair
