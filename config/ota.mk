@@ -18,8 +18,8 @@ PRODUCT_PACKAGES += \
 
 # OTA Configuration
 $(shell echo -e "OTA_Configuration\n \
-ota_beta=https://raw.githubusercontent.com/despOSitoROM/OTAconfig/teen/ota_$(DEVICE)_beta.xml\n \
-ota_official=https://raw.githubusercontent.com/despOSitoROM/OTAconfig/teen/ota_$(DEVICE)_beta.xml\n \
+ota_beta=https://raw.githubusercontent.com/despOSitoROM/OTAconfig/pie/ota_$(DEVICE)_beta.xml\n \
+ota_official=https://raw.githubusercontent.com/despOSitoROM/OTAconfig/pie/ota_$(DEVICE)_official.xml\n \
 device_name=org.cosp.device\n \
 release_type=Pie\n \
 version_source=org.cosp.version\n \
