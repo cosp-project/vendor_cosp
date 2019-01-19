@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
 	Gallery2 \
 	LatinIME \
 	Snap \
-	Chromium
+	ffox
 
 # Lawnchair
 PRODUCT_PACKAGES += Lawnchair
