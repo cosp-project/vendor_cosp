@@ -11,6 +11,9 @@ ifeq ($(OTA_TYPE),official)
 OTA_TYPE=OFFICIAL
 endif
 
+#Device name
+DEVICE := $(subst cosp_,,$(TARGET_PRODUCT))
+
 ifneq ($(OTA_TYPE),Unofficial)
 # OTA app
 PRODUCT_PACKAGES += \
