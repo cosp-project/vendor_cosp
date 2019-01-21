@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= COSP
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -124,10 +124,7 @@ PRODUCT_PACKAGES += \
 	
 # COSP packages
 PRODUCT_PACKAGES += \
-	messaging \
 	Calendar \
-	Contacts \
-	Dialer \
 	Gallery2 \
 	LatinIME \
 	Snap \
