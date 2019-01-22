@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
 	Gallery2 \
 	LatinIME \
 	Snap \
-	ffox
+	Jelly
 
 # Lawnchair
 PRODUCT_PACKAGES += Lawnchair
