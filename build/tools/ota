@@ -9,7 +9,7 @@ TIME=`grep org.cosp.timestamp $OUT/*/build.prop | cut -d'=' -f2`
 OTA=${OTA_TYPE,,}
 TITLE=$DEVICE\_$OTA
 
-COSP_TARGET_PACKAGE=$VERSION.zip
+COSP_TARGET_PACKAGE=$(VERSION)-$(DEVICE).zip
 
 # Create OTA XML file
 if [ -f $OTA_DIR/ota_conf ] &>/dev/null; then
