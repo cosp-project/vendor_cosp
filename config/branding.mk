@@ -13,8 +13,10 @@ CUSTOM_VERSION := COSP-$(CUSTOM_BUILD_DATE)-$(OTA_TYPE)-$(CUSTOM_BUILD)
 ROM_FINGERPRINT := COSP/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
 endif
 
+VERSION_PROP := COSP-$(CUSTOM_BUILD_DATE)-$(OTA_TYPE)
+
 CUSTOM_PROPERTIES := \
-    org.cosp.version=$(CUSTOM_VERSION) \
+    org.cosp.version=$(VERSION_PROP) \
     org.cosp.build_date=$(CUSTOM_BUILD_DATE) \
     org.cosp.build_type=$(OTA_TYPE) \
     org.cosp.fingerprint=$(ROM_FINGERPRINT) \
