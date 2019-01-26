@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
 	Calendar \
 	Gallery2 \
 	LatinIME \
+	SubsKey \
 	Snap \
 	Jelly
 
