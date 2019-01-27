@@ -20,4 +20,4 @@ CUSTOM_PROPERTIES := \
     org.cosp.build_date=$(CUSTOM_BUILD_DATE) \
     org.cosp.build_type=$(OTA_TYPE) \
     org.cosp.fingerprint=$(ROM_FINGERPRINT) \
-    org.cosp.timestamp=$(shell date +%s)
+    org.cosp.device=$(CUSTOM_BUILD)
