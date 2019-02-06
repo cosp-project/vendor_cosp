@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
 	Gallery2 \
 	LatinIME \
 	SubsKey \
+	DeskClock \
 	Snap \
 	Jelly
 
