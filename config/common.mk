@@ -156,6 +156,9 @@ PRODUCT_BOOT_JARS += \
 # Branding
 include vendor/cosp/config/branding.mk
 
+# Themes
+include vendor/themes/config.mk
+
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
