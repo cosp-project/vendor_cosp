@@ -32,4 +32,3 @@ sed -i 's/project/   */g' $Changelog
 
 cp $Changelog $OUT/system/etc/
 cp $Changelog $OUT/
-rm -rf $Changelog
