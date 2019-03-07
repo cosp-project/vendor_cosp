@@ -1,1 +1,4 @@
+add_lunch_combo cosp_mido-userdebug
+add_lunch_combo cosp_rolex-userdebug
+add_lunch_combo cosp_taimen-userdebug
 add_lunch_combo cosp_whyred-userdebug
