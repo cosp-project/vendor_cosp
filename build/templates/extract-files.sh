@@ -60,10 +60,6 @@ fi
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$AOSP_ROOT" false "$CLEAN_VENDOR"
 
-<<<<<<< HEAD
-extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
-=======
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" --section "${SECTION}"
->>>>>>> 1c79df2a... extract_utils: template: make --section argument non-positional
 
 "$MY_DIR"/setup-makefiles.sh
