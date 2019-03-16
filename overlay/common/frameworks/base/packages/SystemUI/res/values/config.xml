@@ -35,7 +35,7 @@
 
     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
     <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,nfc,location,hotspot,inversion,saver,work,cast,night,screenshot,screenrecord,sound,smartpixels,heads_up,caffeine
+        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,nfc,location,hotspot,inversion,saver,work,cast,night,screenshot,screenrecord,sound,smartpixels,heads_up,caffeine,reboot,volume_panel
     </string>
 
 </resources>
