@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
 	
 # COSP packages
 PRODUCT_PACKAGES += \
+	ExactCalculator \
 	Calendar \
 	Gallery2 \
 	LatinIME \
