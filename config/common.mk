@@ -128,13 +128,8 @@ PRODUCT_PACKAGES += \
 	SubsKey \
 	DeskClock \
 	Snap \
-	Jelly
-
-# Lawnchair
-PRODUCT_PACKAGES += Lawnchair
-PRODUCT_COPY_FILES += \
-    vendor/cosp/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
-    vendor/cosp/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+	Jelly \
+	Launcher3QuickStep
 	
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
