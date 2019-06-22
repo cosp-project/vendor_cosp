@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
 	Calendar \
 	Gallery2 \
 	LatinIME \
-	SubsKey \
+	SubstratumSignature \
 	DeskClock \
 	Snap \
 	Jelly \
