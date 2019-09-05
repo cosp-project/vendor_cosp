@@ -1,7 +1,7 @@
 # Set all versions
 OTA_TYPE ?= UNOFFICIAL
 CUSTOM_BUILD_DATE := $(shell date +"%y%m%d")
-CUSTOM_PLATFORM_VERSION := 9.0
+CUSTOM_PLATFORM_VERSION := 10.0
 
 TARGET_PRODUCT_SHORT := $(subst cosp_,,$(CUSTOM_BUILD))
 

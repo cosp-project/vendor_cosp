@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
 	Calendar \
 	Gallery2 \
 	LatinIME \
-	SubstratumSignature \
 	DeskClock \
 	Snap \
 	Jelly \
@@ -150,18 +149,18 @@ PRODUCT_BOOT_JARS += \
     org.pixelexperience.keydisabler
 
 # Cutout control overlay
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+#PRODUCT_PACKAGES += \
+#    NoCutoutOverlay
 	
 # Fonts
-PRODUCT_PACKAGES += \
-    CustomFonts
+#PRODUCT_PACKAGES += \
+#    CustomFonts
 
 # Branding
 include vendor/cosp/config/branding.mk
 
 # Themes
-include vendor/themes/config.mk
+#include vendor/themes/config.mk
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
